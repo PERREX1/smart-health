@@ -12,7 +12,17 @@
         app:layout_constraintTop_toTopOf="parent"
         android:layout_marginTop="@dimen/margin_min"
         android:layout_marginHorizontal="@dimen/medium_margin"
-        android:layout_height="wrap_content"/>
+        android:layout_height="wrap_content"
+        app:cardElevation="@dimen/elevacion_tarjeta">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="@dimen/medium_margin"
+        />
+
+    </com.google.android.material.card.MaterialCardView>
+
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
