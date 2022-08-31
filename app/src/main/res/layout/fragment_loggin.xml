@@ -22,10 +22,62 @@
         android:layout_margin="@dimen/margin_min">
 
         <com.google.android.material.textfield.TextInputLayout
-            android:layout_width="match_parent"
-            android:layout_height="match_parent">
+            android:id="@+id/loggin_email_layout"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:hint="@string/hint_email"
+            >
 
+
+          <com.google.android.material.textfield.TextInputEditText
+              android:id="@+id/space_email"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:inputType="textEmailAddress"
+              style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+              >
+
+          </com.google.android.material.textfield.TextInputEditText>
         </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/loggin_pasword_layout"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toBottomOf="@id/loggin_email_layout"
+            android:layout_marginVertical="@dimen/margin_min"
+            app:layout_constraintStart_toStartOf="parent"
+            app:endIconMode="password_toggle"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:hint="@string/pasword1"
+            >
+
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/space_password"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:inputType="numberPassword"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                >
+
+            </com.google.android.material.textfield.TextInputEditText>
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.button.MaterialButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toBottomOf="@id/loggin_pasword_layout"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginVertical="@dimen/medium_margin"
+            style="@style/Widget.MaterialComponents.Button.TextButton"
+            android:text="@string/reset_pasword"
+            >
+
+        </com.google.android.material.button.MaterialButton>
 
     </androidx.constraintlayout.widget.ConstraintLayout>
         

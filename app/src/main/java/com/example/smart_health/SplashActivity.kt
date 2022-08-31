@@ -1,6 +1,7 @@
 package com.example.smart_health
 
 import android.animation.Animator
+import android.content.Intent
 import android.os.Bundle
 import android.util.Log
 import com.google.android.material.snackbar.Snackbar
@@ -12,6 +13,7 @@ import androidx.navigation.ui.navigateUp
 import androidx.navigation.ui.setupActionBarWithNavController
 import android.view.Menu
 import android.view.MenuItem
+import com.example.smart_health.databinding.ActivityLogginBinding
 import com.example.smart_health.databinding.ActivitySplashBinding
 
 class SplashActivity : AppCompatActivity() {
@@ -28,13 +30,13 @@ class SplashActivity : AppCompatActivity() {
     override fun onStart() {
         super.onStart()
         binding.splashIni.playAnimation()
-
         binding.splashIni.addAnimatorListener(object: Animator.AnimatorListener{
             override fun onAnimationStart(animation: Animator?) {
             }
 
             override fun onAnimationEnd(animation: Animator?) {
-                Log.d(String(),"Probando")
+                val intent = Intent(applicationContext, LogginActivity::class.java)
+                startActivity(intent)
             }
 
             override fun onAnimationCancel(animation: Animator?) {
