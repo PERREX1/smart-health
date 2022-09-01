@@ -1,6 +1,6 @@
 <resources>
     <dimen name="fab_margin">16dp</dimen>
-    <dimen name="logo_size">200dp</dimen>
+    <dimen name="logo_size">250dp</dimen>
     <dimen name="margin_min">10dp</dimen>
     <dimen name="medium_margin">20dp</dimen>
     <dimen name="elevacion_tarjeta">8dp</dimen>
