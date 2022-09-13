@@ -32,7 +32,7 @@ class LogginFragment : Fragment() {
             if (!binding.spacePassword.text.toString().isValidPassword()) {
                 binding.logginPaswordLayout.error = getString(R.string.invalid_password)
             } else {
-                binding.logginEmailLayout.error = null
+                binding.logginPaswordLayout.error = null
             }
 
         }
