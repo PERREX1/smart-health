@@ -4,4 +4,8 @@
     <dimen name="margin_min">10dp</dimen>
     <dimen name="medium_margin">20dp</dimen>
     <dimen name="elevacion_tarjeta">8dp</dimen>
+    <dimen name="Corner_size_small">35%</dimen>
+    <dimen name="corner_size_medium">15dp</dimen>
+    <dimen name="corner_size_large">9dp</dimen>
+
 </resources>

@@ -1,8 +1,37 @@
 <resources xmlns:tools="http://schemas.android.com/tools">
-    <!-- Base application theme. -->
+
     <style name="Base.Theme.Smarthealth" parent="Theme.Material3.DayNight.NoActionBar">
         <!-- Customize your light theme here. -->
-        <!-- <item name="colorPrimary">@color/my_light_primary</item> -->
+        <item name="fontFamily">@font/fjalla_one</item>
+        <item name="colorPrimary">@color/azul_oscuro</item>
+        <item name="colorSecondary">@color/azul_claro</item>
+        <item name="colorAccent">@color/gris</item>
+        <item name="colorOnError">@color/rojo_error</item>
+        <item name="backgroundColor">@color/white</item>
+        <item name="colorOnBackground">@color/black</item>
+        <item name="shapeAppearanceSmallComponent">@style/ShapeAppearance.ShTheme.SmallComponent</item>
+        <item name="shapeAppearanceMediumComponent">@style/ShapeAppearance.ShTheme.MediumComponent</item>
+        <item name="shapeAppearanceLargeComponent">@style/ShapeAppearance.ShTheme.LargeComponent</item>
+    </style>
+
+    <style name="ShapeAppearance.ShTheme.SmallComponent" parent="ShapeAppearance.MaterialComponents.SmallComponent">
+        <item name="cornerFamily">rounded</item>
+        <item name="cornerSize">@dimen/Corner_size_small</item>
+    </style>
+
+    <style name="ShapeAppearance.ShTheme.MediumComponent" parent="ShapeAppearance.MaterialComponents.MediumComponent">
+        <item name="cornerFamily">rounded</item>
+        <item name="cornerSize">@dimen/corner_size_medium</item>
+    </style>
+
+    <style name="ShapeAppearance.ShTheme.LargeComponent" parent="ShapeAppearance.MaterialComponents.LargeComponent">
+        <item name="cornerFamily">rounded</item>
+        <item name="cornerSize">@dimen/corner_size_large</item>
+    </style>
+
+    <style name="TextBlue.Sh" parent="TextAppearance.MaterialComponents.Body1">
+        <item name="fontFamily">@font/fjalla_one</item>
+        <item name="android:textColor">@color/azul_oscuro</item>
     </style>
 
     <style name="Theme.Smarthealth" parent="Base.Theme.Smarthealth" />

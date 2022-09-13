@@ -5,86 +5,129 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".LogginFragment">
-    
+
     <com.google.android.material.card.MaterialCardView
+        app:layout_constraintVertical_chainStyle="spread"
+        android:id="@+id/fragment_loggin_card"
         android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toTopOf="@id/boton_ingresar"
+        android:layout_marginHorizontal="@dimen/medium_margin"
+        android:layout_marginTop="@dimen/margin_min"
+        app:cardElevation="@dimen/elevacion_tarjeta"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        android:layout_marginTop="@dimen/margin_min"
-        android:layout_marginHorizontal="@dimen/medium_margin"
-        android:layout_height="wrap_content"
-        app:cardElevation="@dimen/elevacion_tarjeta">
+        app:layout_constraintTop_toTopOf="parent">
 
-    <androidx.constraintlayout.widget.ConstraintLayout
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:layout_margin="@dimen/margin_min">
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="@dimen/margin_min">
 
-        <com.google.android.material.textfield.TextInputLayout
-            android:id="@+id/loggin_email_layout"
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
-            android:hint="@string/hint_email"
-            >
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/loggin_email_layout"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:hint="@string/hint_email"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent">
 
 
-          <com.google.android.material.textfield.TextInputEditText
-              android:id="@+id/space_email"
-              android:layout_width="match_parent"
-              android:layout_height="match_parent"
-              android:inputType="textEmailAddress"
-              style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
-              >
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/space_email"
+                    style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:inputType="textEmailAddress">
 
-          </com.google.android.material.textfield.TextInputEditText>
-        </com.google.android.material.textfield.TextInputLayout>
+                </com.google.android.material.textfield.TextInputEditText>
+            </com.google.android.material.textfield.TextInputLayout>
 
-        <com.google.android.material.textfield.TextInputLayout
-            android:id="@+id/loggin_pasword_layout"
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            app:layout_constraintTop_toBottomOf="@id/loggin_email_layout"
-            android:layout_marginVertical="@dimen/margin_min"
-            app:layout_constraintStart_toStartOf="parent"
-            app:endIconMode="password_toggle"
-            app:layout_constraintEnd_toEndOf="parent"
-            android:hint="@string/pasword1"
-            >
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/loggin_pasword_layout"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginVertical="@dimen/margin_min"
+                android:hint="@string/pasword1"
+                app:endIconMode="password_toggle"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/loggin_email_layout">
 
 
-            <com.google.android.material.textfield.TextInputEditText
-                android:id="@+id/space_password"
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:inputType="numberPassword"
-                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
-                >
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/space_password"
+                    style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:inputType="numberPassword">
 
-            </com.google.android.material.textfield.TextInputEditText>
-        </com.google.android.material.textfield.TextInputLayout>
+                </com.google.android.material.textfield.TextInputEditText>
+            </com.google.android.material.textfield.TextInputLayout>
 
-        <com.google.android.material.button.MaterialButton
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            app:layout_constraintTop_toBottomOf="@id/loggin_pasword_layout"
-            app:layout_constraintEnd_toEndOf="parent"
-            android:layout_marginVertical="@dimen/medium_margin"
-            style="@style/Widget.MaterialComponents.Button.TextButton"
-            android:text="@string/reset_pasword"
-            >
+            <com.google.android.material.button.MaterialButton
+                style="@style/Widget.MaterialComponents.Button.TextButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginVertical="@dimen/medium_margin"
+                android:fontFamily="@font/fjalla_one"
+                android:text="@string/reset_pasword"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/loggin_pasword_layout">
 
-        </com.google.android.material.button.MaterialButton>
+            </com.google.android.material.button.MaterialButton>
 
-    </androidx.constraintlayout.widget.ConstraintLayout>
-        
+        </androidx.constraintlayout.widget.ConstraintLayout>
 
 
     </com.google.android.material.card.MaterialCardView>
 
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/boton_ingresar"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="@dimen/medium_margin"
+        android:backgroundTint="@color/azul_claro"
+        android:text="@string/btn_ingresar"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/crear_cuenta"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/fragment_loggin_card"
+        app:layout_constraintBottom_toBottomOf="parent"
+        >
+
+    </com.google.android.material.button.MaterialButton>
+
+    <com.google.android.material.textview.MaterialTextView
+        android:id="@+id/crear_cuenta"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="@dimen/medium_margin"
+        android:layout_marginTop="30dp"
+        android:text="@string/no_tienes_cuenta"
+        android:textColor="@color/white"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.36"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/boton_ingresar">
+
+    </com.google.android.material.textview.MaterialTextView>
+
+    <com.google.android.material.textview.MaterialTextView
+        android:id="@+id/crear_cuenta_btn"
+        android:textAppearance="@style/TextBlue.Sh"
+        android:layout_width="wrap_content"
+        android:layout_marginTop="30dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toEndOf="@id/crear_cuenta"
+        app:layout_constraintTop_toBottomOf="@id/boton_ingresar"
+        android:text="@string/creala_aqui"
+        app:layout_constraintBottom_toBottomOf="parent"
+        >
+
+    </com.google.android.material.textview.MaterialTextView>
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

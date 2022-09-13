@@ -1,8 +1,12 @@
 <resources>
     <string name="app_name">Smart-Health</string>
-    <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
     <string name="hint_email">Correo Electronico</string>
     <string name="pasword1">Contraseña</string>
     <string name="reset_pasword">Recuperar Contraseña</string>
+    <string name="btn_ingresar">Ingresar</string>
+    <string name="no_tienes_cuenta">No tienes cuenta?</string>
+    <string name="creala_aqui">Creala aqui!</string>
+    <string name="invalid_email">Email no valido!</string>
+    <string name="invalid_password">Contraseña equivocada</string>
 </resources>

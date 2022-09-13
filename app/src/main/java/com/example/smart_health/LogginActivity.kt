@@ -7,8 +7,11 @@ import com.example.smart_health.databinding.ActivityLogginBinding
 
 class LogginActivity : AppCompatActivity() {
 
+    private lateinit var binding: ActivityLogginBinding
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_loggin)
+        binding = ActivityLogginBinding.inflate(layoutInflater)
+        setContentView(binding.root)
     }
 }

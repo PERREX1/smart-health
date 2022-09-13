@@ -20,5 +20,24 @@ class LogginFragment : Fragment() {
         return binding.root
     }
 
+    override fun onStart() {
+        super.onStart()
+
+        binding.botonIngresar.setOnClickListener {
+            if (!binding.spaceEmail.text.toString().isValidEmail()) {
+                binding.logginEmailLayout.error = getString(R.string.invalid_email)
+            } else {
+                binding.logginEmailLayout.error = null
+            }
+            if (!binding.spacePassword.text.toString().isValidPassword()) {
+                binding.logginPaswordLayout.error = getString(R.string.invalid_password)
+            } else {
+                binding.logginEmailLayout.error = null
+            }
+
+        }
+
+
+    }
 
 }
