@@ -5,12 +5,13 @@ import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import androidx.navigation.fragment.findNavController
 import com.example.smart_health.databinding.FragmentLogginBinding
 
 class LogginFragment : Fragment() {
 
-    private var _binding: FragmentLogginBinding? = null
-    private val  binding: FragmentLogginBinding get() = _binding!!
+    private  var _binding: FragmentLogginBinding? = null
+    private  val  binding: FragmentLogginBinding get() = _binding!!
 
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
@@ -37,6 +38,9 @@ class LogginFragment : Fragment() {
 
         }
 
+        binding.btnRecuperar.setOnClickListener{
+            findNavController().navigate(R.id.action_logginFragment_to_resetPasswordFragment)
+        }
 
     }
 

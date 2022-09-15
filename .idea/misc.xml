@@ -22,6 +22,7 @@
         <entry key="app/src/main/res/layout/activity_loggin.xml" value="0.1" />
         <entry key="app/src/main/res/layout/activity_main.xml" value="0.17119565217391305" />
         <entry key="app/src/main/res/layout/fragment_loggin.xml" value="0.23964548999478358" />
+        <entry key="app/src/main/res/layout/fragment_reset_password.xml" value="0.15729166666666666" />
         <entry key="app/src/main/res/menu/menu_main.xml" value="0.18385416666666668" />
         <entry key="app/src/main/res/mipmap-anydpi-v26/logoSH.xml" value="0.1" />
       </map>
